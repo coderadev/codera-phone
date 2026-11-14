@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Codera Phone</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="callkeys"></div>
+
+<div id="phone-wrap">
+  <div id="phone">
+    <div id="screen">
+
+      <div id="statusbar">
+        <span class="sb-l"><span id="sb-time" data-act="shade">8:00 AM</span><span id="sb-bell" class="hidden" data-act="shade"></span></span>
+        <span class="sb-icons">
+          <svg viewBox="0 0 24 24" class="sb"><rect x="2" y="15" width="3" height="6" rx="1"/><rect x="8" y="11" width="3" height="10" rx="1"/><rect x="14" y="7" width="3" height="14" rx="1"/><rect x="20" y="3" width="3" height="18" rx="1"/></svg>
+          <svg viewBox="0 0 24 24" class="sb"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10.5 10.5 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="19.5" r="1.6"/></svg>
+          <svg viewBox="0 0 28 24" class="sb"><rect x="1" y="6" width="22" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3.5" y="8.5" width="14" height="7" rx="1.5"/><rect x="24" y="10" width="3" height="4" rx="1"/></svg>
+        </span>
+      </div>
+
+      <div id="home" class="home"></div>
+      <div id="dock"></div>
+      <div id="appview"></div>
+
+      <div id="shade">
+        <div class="shade-h"><b>Notifications</b><button class="btn sm" data-act="clearnotifs">Clear</button></div>
+        <div id="shade-list"></div>
+      </div>
+
+      <div id="toasts"></div>
+      <div id="call"></div>
+      <div id="headsup"></div>
+      <div id="callpill" data-act="cshow"></div>
+      <div id="homebar" data-act="home"><i></i></div>
+    </div>
+    <div id="island"><i></i></div>
+  </div>
+
+  <div id="hints">
+    <div><kbd>U</kbd><span>Notifications</span></div>
+    <div><kbd>T</kbd><span id="hint-fold">Unfold</span></div>
+    <div><kbd>Y</kbd><span>Home</span></div>
+    <div><kbd>&#8629;</kbd><span>Select</span></div>
+    <div><kbd class="wide">&larr;</kbd><span>Back</span></div>
+    <div><kbd class="wide">ESC</kbd><span>Close</span></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
